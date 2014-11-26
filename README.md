@@ -27,3 +27,5 @@ Then, to include a sequence diagram, just wrap your definition in a "sequence" c
     C->>D: Open arrow
     D-->>A: Dashed open arrow
     ```
+
+Please reference the [js-sequence-diagrams](http://bramp.github.io/js-sequence-diagrams/) documentation for details on syntax.
