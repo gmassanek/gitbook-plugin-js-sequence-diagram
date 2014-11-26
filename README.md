@@ -20,10 +20,10 @@ To use the plugin in your Gitbook project, add the plugin to the `book.json` fil
 
 Then, to include a sequence diagram, just wrap your definition in a "sequence" code block. For example:
 
-``` sequence
-Title: Here is a title
-A->B: Normal line
-B-->C: Dashed line
-C->>D: Open arrow
-D-->>A: Dashed open arrow
-```
+    ``` sequence
+    Title: Here is a title
+    A->B: Normal line
+    B-->C: Dashed line
+    C->>D: Open arrow
+    D-->>A: Dashed open arrow
+    ```
