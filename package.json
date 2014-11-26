@@ -6,16 +6,16 @@
     "engines": {
         "gitbook": "*"
     },
-    "homepage": "https://github.groupondev.com/geoff/plugin-js-sequence-diagram",
+    "homepage": "https://github.com/gmassanek/gitbook-plugin-js-sequence-diagram",
     "dependencies": {
       "jquery": "*"
     },
     "repository": {
         "type": "git",
-        "url": "https://github.groupondev.com/geoff/plugin-js-sequence-diagram.git"
+        "url": "https://github.com/gmassanek/gitbook-plugin-js-sequence-diagram.git"
     },
     "license": "Apache 2",
     "bugs": {
-        "url": "https://github.groupondev.com/geoff/plugin-js-sequence-diagram/issues"
+        "url": "https://github.com/gmassanek/gitbook-plugin-js-sequence-diagram/issues"
     }
 }
