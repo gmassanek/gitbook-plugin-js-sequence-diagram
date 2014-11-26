@@ -1,18 +1,18 @@
 {
-    "name": "gitbook-plugin",
-    "description": "Sample plugin for GitBook",
+    "name": "gitbook-plugin-js-sequence-diagram",
+    "description": "JS Sequence Diagram plugin for GitBook",
     "main": "index.js",
-    "version": "0.0.2",
+    "version": "0.0.1",
     "engines": {
         "gitbook": "*"
     },
-    "homepage": "https://github.com/GitbookIO/plugin",
+    "homepage": "https://github.groupondev.com/geoff/plugin-js-sequence-diagram",
     "repository": {
         "type": "git",
-        "url": "https://github.com/GitbookIO/plugin.git"
+        "url": "https://github.groupondev.com/geoff/plugin-js-sequence-diagram.git"
     },
     "license": "Apache 2",
     "bugs": {
-        "url": "https://github.com/GitbookIO/plugin/issues"
+        "url": "https://github.groupondev.com/geoff/plugin-js-sequence-diagram/issues"
     }
 }

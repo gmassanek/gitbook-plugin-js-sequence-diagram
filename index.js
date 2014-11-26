@@ -2,11 +2,11 @@ module.exports = {
     book: {
         assets: "./book",
         js: [
-            "test.js"
+            "raphael-min.js",
+            "underscore-min.js",
+            "sequence-diagram-min.js"
         ],
-        css: [
-            "test.css"
-        ],
+        css: [],
         html: {
             "html:start": function() {
                 return "<!-- Start book "+this.options.title+" -->"
@@ -33,6 +33,7 @@ module.exports = {
         // This is called after the book generation
         "finish": function() {
             console.log("finish!");
+            //$(".diagram").sequenceDiagram({theme: 'hand'})
         },
 
         // The following hooks are called for each page of the book
