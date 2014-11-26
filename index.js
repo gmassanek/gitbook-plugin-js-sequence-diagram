@@ -33,7 +33,6 @@ module.exports = {
         // This is called after the book generation
         "finish": function() {
             console.log("finish!");
-            //$(".diagram").sequenceDiagram({theme: 'hand'})
         },
 
         // The following hooks are called for each page of the book
@@ -71,6 +70,7 @@ module.exports = {
             //page.content = "<h1>Title</h1>\n" + page.content;
             // -> This title will be added before the html tag so not visible in the browser
 
+            $("code.lang-sequence").sequenceDiagram({theme: 'hand'})
             return page;
         }
     }
