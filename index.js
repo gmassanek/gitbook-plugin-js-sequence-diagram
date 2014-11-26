@@ -2,11 +2,13 @@ module.exports = {
     book: {
         assets: "./book",
         js: [
-            "raphael-min.js",
+            "jquery-2.1.1.min.js",
             "underscore-min.js",
             "sequence-diagram-min.js"
         ],
-        css: [],
+        css: [
+          "styles.css"
+        ],
         html: {
             "html:start": function() {
                 return "<!-- Start book "+this.options.title+" -->"
@@ -16,10 +18,13 @@ module.exports = {
             },
 
             "head:start": "<!-- head:start -->",
-            "head:end": "<!-- head:end -->",
-
+            "head:end": function() {
+                return "<script src='../gitbook/plugins/gitbook-plugin-js-sequence-diagram/raphael-min.js'></script>";
+            },
             "body:start": "<!-- body:start -->",
-            "body:end": "<!-- body:end -->"
+            "body:end": function() {
+              return "<script>element=$('code.lang-sequence'); element.sequenceDiagram({theme: 'simple'}); element.parent().replaceWith(element.html())</script>";
+            }
         }
     },
     hooks: {
@@ -70,7 +75,6 @@ module.exports = {
             //page.content = "<h1>Title</h1>\n" + page.content;
             // -> This title will be added before the html tag so not visible in the browser
 
-            $("code.lang-sequence").sequenceDiagram({theme: 'hand'})
             return page;
         }
     }

@@ -7,6 +7,9 @@
         "gitbook": "*"
     },
     "homepage": "https://github.groupondev.com/geoff/plugin-js-sequence-diagram",
+    "dependencies": {
+      "jquery": "*"
+    },
     "repository": {
         "type": "git",
         "url": "https://github.groupondev.com/geoff/plugin-js-sequence-diagram.git"
