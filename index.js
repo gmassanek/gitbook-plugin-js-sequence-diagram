@@ -13,7 +13,7 @@ module.exports = {
         html: {
             "head:end": function() {
                 // Required to including this way because raphael is non-AMD compliant
-                return "<script src='../gitbook/plugins/gitbook-plugin-js-sequence-diagram/raphael-min.js'></script>";
+                return "<script src='//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.2/raphael-min.js'></script>";
             }
         }
     }
